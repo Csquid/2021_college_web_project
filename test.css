@@ -1,0 +1,38 @@
+body,
+head {
+  margin: 0;
+  padding: 0;
+}
+#login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#login-box {
+  width: 200px;
+  height: 100%;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#login-box input,
+button {
+  width: -webkit-fill-available;
+  margin-bottom: 5px;
+}
+
+#login-box p {
+  display: none;
+  margin: 7px 0px;
+  color: red;
+}
+
+#login-box input:last-child button:last-child {
+  margin-bottom: 0px;
+}
+
+#login-input-box {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+
+    <style>
+      body,
+      head {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container .box {
+        width: 200px;
+        height: 100%;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      .box input,
+      button {
+        width: -webkit-fill-available;
+        margin-bottom: 5px;
+      }
+
+      .box p {
+        display: none;
+        margin: 7px 0;
+        color: red;
+      }
+
+      .box input:last-child button:last-child {
+        margin-bottom: 0;
+      }
+
+      #login-input-box {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        <p id="wrong-id_pw">아이디 또는 비밀번호가 잘못 입력 되었습니다.</p>
+        <p id="empty-id">
+          아이디를 입력해주세요.</p>
+        <p id="empty-pw">
+          비밀번호를 입력해주세요.</p>
+
+        <div id="register-input-box">
+          <input type="text" id="register-id" placeholder="id"/>
+          <button>중복 확인</button>
+          <input type="password" class="register-pw" placeholder="password"/>
+          <input type="password" class="register-pw" placeholder="password"/>
+          <button>패스워드 확인</button>
+          <input type="text" id="register-name" placeholder="name">
+          <input type="text" id="register-email" placeholder="email">
+        </div>
+        <button>
+          <span>회원가입</span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
